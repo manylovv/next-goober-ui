@@ -12,6 +12,7 @@ const StyledWidget = styled('div')`
   flex-direction: row;
   align-items: flex-end;
   padding: 0px 0px 30px 30px;
+  div + div {
     margin-left: 8px;
   }
 `;
