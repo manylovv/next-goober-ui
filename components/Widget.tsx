@@ -9,6 +9,22 @@ const StyledWidget = styled('div')`
   width: 660px;
   height: 210px;
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+`;
+
+const Header = styled('h1')`
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 17px;
+  margin: 28px 0px 0px 30px;
+`;
+
+const Body = styled('div')`
+  display: flex;
   flex-direction: row;
   align-items: flex-end;
   padding: 0px 0px 30px 30px;
@@ -23,12 +39,20 @@ interface Card {
   value: string;
 }
 
-export const Widget = ({ cards }: { cards: Card[] }) => {
+interface WidgetProps {
+  cards: Card[];
+  header: string;
+}
+
+export const Widget = ({ cards, header }: WidgetProps) => {
   return (
     <StyledWidget>
-      {cards.map((card) => (
-        <Card key={card.label} {...card} />
-      ))}
+      <Header>{header}</Header>
+      <Body>
+        {cards.map((card) => (
+          <Card key={card.label} {...card} />
+        ))}
+      </Body>
     </StyledWidget>
   );
 };
