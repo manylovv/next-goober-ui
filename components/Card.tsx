@@ -6,8 +6,6 @@ import { Card as CardType } from '../types/Card';
 setup(React.createElement);
 
 const StyledCard = styled.div`
-  font-family: 'Lato', sans-serif;
-  font-style: normal;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -16,8 +16,6 @@ const StyledWidget = styled.div`
 `;
 
 const Header = styled.h1`
-  font-family: 'Lato';
-  font-style: normal;
   font-weight: 800;
   font-size: 14px;
   line-height: 17px;
