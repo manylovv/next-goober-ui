@@ -1,5 +1,5 @@
 import React from 'react';
-import { styled, setup } from 'goober';
+import { setup, styled } from 'goober';
 
 setup(React.createElement);
 

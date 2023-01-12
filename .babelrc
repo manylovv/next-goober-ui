@@ -1,4 +1,7 @@
 {
   "presets": ["next/babel"],
-  "plugins": ["@agney/babel-plugin-goober-css-prop"]
+  "plugins": [
+    "@agney/babel-plugin-goober-css-prop",
+    "babel-plugin-transform-goober"
+  ]
 }

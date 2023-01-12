@@ -4,7 +4,7 @@ import { Card } from './Card';
 
 setup(React.createElement);
 
-const StyledWidget = styled('div')`
+const StyledWidget = styled.div`
   background: #f1f9fd;
   width: 660px;
   height: 210px;
@@ -14,7 +14,7 @@ const StyledWidget = styled('div')`
   border-radius: 10px;
 `;
 
-const Header = styled('h1')`
+const Header = styled.h1`
   font-family: 'Lato';
   font-style: normal;
   font-weight: 800;
@@ -23,7 +23,7 @@ const Header = styled('h1')`
   margin: 28px 0px 0px 30px;
 `;
 
-const Body = styled('div')`
+const Body = styled.div`
   display: flex;
   flex-direction: row;
   align-items: flex-end;
