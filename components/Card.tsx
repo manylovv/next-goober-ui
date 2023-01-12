@@ -15,6 +15,10 @@ const StyledCard = styled('div')`
   border-radius: 10px;
 `;
 
+const StyledIcon = styled('div')`
+  margin: 15px 0px 12px 0px;
+`;
+
 const StyledLabel = styled('span')`
   font-weight: 400;
   font-size: 14px;
@@ -37,7 +41,7 @@ interface CardProps {
 export const Card = ({ icon, label, value }: CardProps) => {
   return (
     <StyledCard>
-      <div css="margin: 15px 0px 12px 0px;">{icon}</div>
+      <StyledIcon>{icon}</StyledIcon>
       <StyledLabel>{label}</StyledLabel>
       <StyledValue>{value}</StyledValue>
     </StyledCard>
