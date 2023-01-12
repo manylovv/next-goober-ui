@@ -3,7 +3,7 @@ import { setup, styled } from 'goober';
 
 setup(React.createElement);
 
-const StyledCard = styled('div')`
+const StyledCard = styled.div`
   font-family: 'Lato', sans-serif;
   font-style: normal;
   display: flex;
@@ -15,18 +15,18 @@ const StyledCard = styled('div')`
   border-radius: 10px;
 `;
 
-const StyledIcon = styled('div')`
+const StyledIcon = styled.div`
   margin: 15px 0px 12px 0px;
 `;
 
-const StyledLabel = styled('span')`
+const StyledLabel = styled.div`
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
   margin-bottom: 2px;
 `;
 
-const StyledValue = styled('span')`
+const StyledValue = styled.div`
   font-weight: 900;
   font-size: 24px;
   line-height: 29px;
