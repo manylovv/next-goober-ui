@@ -11,6 +11,7 @@ const StyledCard = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: end;
   width: 114px;
   height: 107px;
   background: #ffffff;
@@ -18,7 +19,7 @@ const StyledCard = styled.div`
 `;
 
 const StyledIcon = styled.div`
-  margin: 15px 0px 12px 0px;
+  margin-bottom: 10px;
 `;
 
 const StyledLabel = styled.div`
@@ -32,6 +33,7 @@ const StyledValue = styled.div`
   font-weight: 900;
   font-size: 24px;
   line-height: 29px;
+  margin-bottom: 13px;
 `;
 
 export const Card = ({ icon, label, value }: CardType) => {
