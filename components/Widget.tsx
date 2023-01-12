@@ -1,6 +1,7 @@
 import React from 'react';
 import { styled, setup } from 'goober';
 import { Card } from './Card';
+import { Card as CardType } from '../types/Card';
 
 setup(React.createElement);
 
@@ -33,14 +34,8 @@ const Body = styled.div`
   }
 `;
 
-interface Card {
-  icon: JSX.Element;
-  label: string;
-  value: string;
-}
-
 interface WidgetProps {
-  cards: Card[];
+  cards: CardType[];
   header: string;
 }
 
@@ -50,7 +45,7 @@ export const Widget = ({ cards, header }: WidgetProps) => {
       <Header>{header}</Header>
       <Body>
         {cards.map((card) => (
-          <Card key={card.label} {...card} />
+          <Card key={card.id} {...card} />
         ))}
       </Body>
     </StyledWidget>

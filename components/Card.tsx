@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import Image from 'next/image';
 import { setup, styled } from 'goober';
+import { Card as CardType } from '../types/Card';
 
 setup(React.createElement);
 
@@ -32,16 +34,13 @@ const StyledValue = styled.div`
   line-height: 29px;
 `;
 
-interface CardProps {
-  icon: JSX.Element;
-  label: string;
-  value: string;
-}
-
-export const Card = ({ icon, label, value }: CardProps) => {
+export const Card = ({ icon, label, value }: CardType) => {
+  const { path, alt, width, height } = icon;
   return (
     <StyledCard>
-      <StyledIcon>{icon}</StyledIcon>
+      <StyledIcon>
+        <Image src={path} alt={alt} width={width} height={height} />
+      </StyledIcon>
       <StyledLabel>{label}</StyledLabel>
       <StyledValue>{value}</StyledValue>
     </StyledCard>
